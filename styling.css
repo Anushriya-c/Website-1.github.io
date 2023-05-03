@@ -1,0 +1,846 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif,'Josefin Sans';
+}
+.header
+{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/australia.jpg);
+	background-position:center;
+	background-size: cover;
+}
+nav
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 7%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.logo
+{
+	width: 160px;
+	cursor: pointer;
+	background-color: none;
+	border-radius: 90px;
+}
+.links li
+{
+	list-style: none;
+	display: inline-block;
+	margin: 10px 30px;
+}
+.links li a 
+{
+	text-decoration: none;
+	color: white;
+}
+.button1
+{
+	background-color:orangered ;
+	color: white;
+	padding: 8px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 14px;
+}
+.container
+{
+	padding: 0 7%;
+}
+.header h1
+{
+	font-size: 4vw;
+	font-weight: 900;
+	color: darkkhaki;
+	text-align: center;
+	padding-top: 16%;
+}
+.search-bar
+{
+	background-color: rgb(235, 216, 224);
+	width: 70%;
+	margin: 30px auto;
+	padding: 6px 10px 6px 30px;
+	border-radius: 50px;
+}
+.search-bar form
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.search-bar form input
+{
+	display: block;
+	border: 0;
+	outline: none;
+	background-color: transparent;
+}
+.search-bar form button
+{
+	background-color:rgb(235, 216, 224);
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.search-bar form button img
+{
+	width: 70%;
+	margin-top: 8px;
+	border-radius: 70%;
+}
+.location-input
+{
+	flex: 1;
+}
+.search-bar form label
+{
+	font-weight: 600;
+}
+.sub-title
+{
+	margin-left: 10px;
+	margin-top: 30px;
+	font-size: 2.2vw;
+	font-weight: 700;
+	color: darkblue;
+}
+.Exclusive
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+	grid-gap: 10px;
+}
+
+.Exclusive div img
+{
+	width: 100%;
+	border-radius: 10px;
+	height: 50%;
+	filter: brightness(50%);
+	margin: 0;
+	padding: 0;
+}
+.Exclusive div
+{
+	position: relative;
+}
+.Exclusive div span
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-150%);
+	color:whitesmoke;
+	font-weight: 700;
+}
+.trending
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(10px, 1fr));
+	grid-gap: 10px;
+	margin-bottom: 30px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.trending div img
+{
+	width: 100%;
+	height: 50%;
+	border-radius: 10px;
+	filter: brightness(90%);
+}
+.trending h3
+{
+	font-weight: 600;
+	margin-top: 10px;
+	text-align-last: center;
+}
+.cta
+{
+	margin: 80px 0;
+	background-image: linear-gradient(to right,#3f2321, transparent),url(room.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	padding: 5%;
+	color: white;
+	margin-top: 0;
+	padding-top: 0;
+	width: 100%;
+	height: 100%;
+}
+.cta h3
+{
+	font-size: 4vw;
+	line-height: 5.3vw;
+	font-weight: 500;
+}
+.cta p
+{
+	font-size: 18px;
+	margin: 10px 0;
+}
+.cta-btn
+{
+	background-color:#ff5361;
+	color: white;
+	text-decoration: none;
+	padding: 12px 30px;
+	border-radius: 8px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.stories
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(10px, 1fr));
+	grid-gap: 10px;
+	margin-bottom: 30px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.stories div img
+{
+	width:100%;
+	height: 100%;
+	border-radius: 10px;
+	filter: brightness(50%);
+}
+.stories div
+{
+	position: relative;
+	text-align: center;
+}
+.stories p
+{
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 26px;
+}
+.start-btn
+{
+	text-decoration: none;
+	background-color: darkblue;
+	color: whitesmoke;
+	width: 80%;
+	max-width: 350px;
+	display:block;
+	text-align: center;
+	margin: 5% auto;
+	padding: 15px;
+	border-radius: 30px;
+	font-size: 20px;
+}
+.about-msg
+{
+	text-align: center;
+	margin: 80px 0;
+	color: black;
+	font-size: 17px;
+}
+.about-msg h2
+{
+	font-size: 28px;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+.footer
+{
+	margin: 80px 0 10px;
+	text-align: center;
+}
+.footer a
+{
+	text-decoration: none;
+	color: darkblue;
+	font-size: 22px;
+	margin: 0 10px;
+}
+.footer hr
+{
+	background: darkblue;
+	height: 1px;
+	width: 100%;
+	border: 0;
+	margin: 20px 0;
+}
+.active
+{
+	position: relative;
+}
+.active::after
+{
+	content:'';
+	background: black;
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom:-12px;
+	border-radius: 2px;
+}
+nav .fa-bars
+{
+	display: none;
+}
+/*for resposive page*/
+@media only screen and (max-width: 700px)
+{
+	.logo
+	{
+		position: fixed;
+		top: 4%;
+		left: 7%;
+	}
+	.nav
+	{
+		position: fixed;
+		z-index: 100%;
+		display: inline-block;
+		width: 100%;
+		padding: 100px 7% 8%;
+		background: black;
+		text-align-last: right;
+		max-height: 100px;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav .links li
+	{
+		margin: 40px 300px;
+		display: block;
+	}
+	.button1
+	{
+		margin:60px;
+		display:inline-block;
+	}
+	nav .fa-bars
+	{
+	display:block;
+	position: fixed;
+	top: 4%;
+	right: 7%;
+	color: black;
+	font-size: 28px;
+	}
+	.active::after
+	{
+		left: -40px;
+		transform: translate(0,50%);
+		bottom: 50%;
+	}
+	.hidemenu
+	{
+		max-height: 300px;
+	}
+	.search-bar
+	{
+		width: 90%;
+		margin: 30px auto;
+		padding: 20px 10px 30px;
+		border-radius: 5px;
+		position: relative;
+	}
+	.search-bar form
+	{
+		display: block;
+	}
+	.search-bar form input
+	{
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+	.search-bar form button
+	{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%,50%);
+	}
+	.sub-title
+	{
+		font-size: 6vw;
+	}
+	.cta{
+		padding: 15%,5%;
+	}
+	.cta h3
+	{
+		font-size: 7vw;
+		line-height: 8vw;
+	}
+	.cta p{
+		font-size: 14px;
+	}
+	.cta-btn
+	{
+		padding: 6px, 15px;
+		border-radius: 4px;
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.stories p
+	{
+		font-size:10px;
+	}
+	.about-msg
+	{
+		font-size: 15px;
+	}
+}
+/*-----listing page-----*/
+.navbar-white
+{
+	background-color: white;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.navbar-white .links li a 
+{
+	text-decoration: none;
+	color: black;
+}
+.list-container
+{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.left-col
+{
+	flex-basis: 70%;
+}
+.right-col
+{
+	flex-basis: 25%;
+}
+.left-col h1
+{
+	color: #1b2526;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.house
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	border-top: 1px solid #052629;
+}
+.house-img
+{
+	flex-basis: 40%;
+}
+.house-info
+{
+	flex-basis: 58%;
+	color: #122554;
+}
+.house-img img
+{
+	width: 100%;
+	border-radius: 12%;
+	height: 200px;
+}
+.house-info h3
+{
+	font-weight: 600;
+	color: #122554;
+	font-size: 22px;
+	margin: 4px 0;
+}
+.house-info i
+{
+	color:darkred;
+	font-size: 18px;
+	margin: 10px 1px;
+
+}
+.house-price
+{
+	text-align: right;
+}
+.house-price h4
+{
+	font-size: 20px;
+}
+.house-price h4 span
+{
+	font-size: 16px;
+	font-weight: 500;
+}
+.sidebar
+{
+	border: 1px solid darkblue;
+	padding: 20px 30px;
+	margin-top: 20px;
+}
+.sidebar h2
+{
+	font-weight: 500;
+	text-align: center;
+}
+.sidebar h3
+{
+	font-weight: 500;
+	margin: 20px 0 10px;
+}
+.filter
+{
+	display: flex;
+	align-items: center;
+	color:#122554 ;
+	margin-bottom: 10px;
+}
+.filter p
+{
+	flex: 1;
+}
+.filter input
+{
+	margin-right: 15px;
+	cursor: pointer;
+}
+.sidebar-link
+{
+	text-align: right;
+	margin: 20px 0;
+}
+.sidebar-link a
+{
+	text-decoration: none;
+	color:whitesmoke;
+	background-color:darkred;
+	padding: 6px;
+	border-radius: 5px;
+}
+.pagination
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0;
+}
+.pagination i
+{
+	width: 15px;
+	margin: 10px 20px;
+}
+.pagination span
+{
+	margin: 10px 8px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.pagination .current
+{
+	background-color: lightcoral;
+	color: whitesmoke;
+}
+/*-----------small screen------*/
+@media only screen and (max-width: 700px)
+{
+	.list-container
+	{
+		margin-top:50px;
+	}
+	.left-col, .right-col, .house-img, .house-info
+	{
+		flex-basis: 100%;
+	}
+	.left-col h1
+	{
+		font-size: 22px;
+	}
+	.house-info h3
+	{
+		font-size: 18px;
+	}
+	.house-info i
+	{
+		font-size: 16px;
+	}
+	.pagination span
+	{
+		margin: 10px 2px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+}
+/*---------house-details--------*/
+.house-details
+{
+	padding: 0 12%;
+}
+.house-title
+{
+	margin-top: 50px;
+}
+.house-title h1
+{
+	font-weight: 600;
+}
+.house-title .row
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 10px 0;
+}
+.house-title span 
+{
+	margin: 0 20px;
+}
+.house-title i 
+{
+	color: darkred;
+	font-size: 14px;
+}
+.gallery
+{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:'first first . .' 'first first . .' ;
+	margin: 10px 0;
+}
+.gallery div img
+{
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+	height: 100%;
+}
+.gallery-img-1
+{
+	grid-area: first;
+}
+.small-details h2
+{
+	font-weight: 500;
+}
+.small-details h4
+{
+	text-align: right;
+	font-size: 22px;
+}
+.line 
+{
+	border: 0;
+	height: 1px;
+	background: darkblue;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px 0 50px;
+}
+.check-form
+{
+	margin: 20px 0;
+	background:lightgrey;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 20px;
+}
+.check-form label
+{
+	display: block;
+}
+.check-form div
+{
+	padding: 20px;
+}
+.check-form button
+{
+	background: #eb838f;
+	border: 0;
+	outline: none;
+	color: whitesmoke;
+	padding: 20px;
+	width: 300px;
+	border-radius: 8px;
+	font-size: 16px;
+}
+.guest-field
+{
+	flex: 1;
+}
+.details-list
+{
+	list-style: none;
+	margin: 50px 0;
+}
+.details-list li 
+{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: black;
+	position: relative;
+}
+.details-list li span 
+{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+.details-list li i 
+{
+	position: absolute;
+	top: 5px;
+	left: -40px;
+	color: darkblue;
+}
+.home-desc
+{
+	max-width: 700px;
+	margin-bottom: 30px;
+}
+.map 
+{
+	margin: 30px 0;
+}
+.map iframe
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.map h3
+{
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.map b 
+{
+	display: block;
+	margin-bottom: 16px;
+}
+.host 
+{
+	display: flex;
+	align-items: center;
+}
+.host img 
+{
+	width: 80px;
+	border-radius: 50%;
+	margin-right: 20px ;
+}
+.host h2
+{
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.host i 
+{
+	color: darkred;
+}
+.contact
+{
+	display: inline-block;
+	margin: 40px 0 40px 120px;
+	text-decoration: none;
+	color: darkred;
+	padding: 15px 50px;
+	border: 1px solid darkblue;
+	border-radius: 8px;
+}
+/*------small screen------*/
+@media only screen and (max-width: 700px)
+{
+	.house-details
+	{
+		margin-top: 50px;
+	}
+	.row p 
+	{
+		margin-top: 10px;
+	}
+	.gallery
+	{
+		grid-template-areas: 'first first' '. .' ' . .';
+	}
+	.small-details h2
+	{
+		font-size: 20px;
+		margin-top: 24px;
+	}
+	.small-details h4
+	{
+		text-align: left;
+		margin: 10px 0;
+		font-size: 18px;
+	}
+	.check-form
+	{
+		padding: 10px 30px;
+	}
+	.check-form div
+	{
+		padding: 20px 0;
+		width: 100%;
+	}
+	.check-form label
+	{
+		margin-bottom: 2px;
+	}
+	.check-form input
+	{
+		border-bottom: 1px solid darkblue;
+		width: 100%;
+		padding-bottom: 5px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		background-color: lightgrey;
+	}
+	.check-form button
+	{
+		font-size: 14px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		border-radius: 4px;
+	}
+	.host 
+	{
+		display: block;
+		line-height: 28px;
+	}
+	.contact
+	{
+		margin: 40px 0;
+	}
+
+
+}
